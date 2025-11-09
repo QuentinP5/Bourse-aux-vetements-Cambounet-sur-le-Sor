@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!doctype html&gt;</p>
+<p class="p1">&lt;html lang="fr"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="utf-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;</p>
+<p class="p1">&lt;title&gt;Bourse aux vêtements - Cambounet-sur-le-Sor&lt;/title&gt;</p>
+<p class="p1">&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">body {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background-color: #fbfbf9;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background-image: radial-gradient(#e9e9e8 1px, transparent 1px);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background-size: 18px 18px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'Inter', sans-serif;</p>
+<p class="p1">}</p>
+<p class="p1">.site-wrapper { max-width: 1000px; margin: auto; }</p>
+<p class="p2"><br></p>
+<p class="p1">/* Bandeau rouge animé */</p>
+<p class="p1">header {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: fixed;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>top: 0; left: 0; right: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background-color: #b91c1c;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>height: 180px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition: all 1s ease-in-out;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>z-index: 50;</p>
+<p class="p1">}</p>
+<p class="p1">header.shrink {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>height: 80px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>justify-content: flex-start;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding-left: 2rem;</p>
+<p class="p1">}</p>
+<p class="p1">header.shrink img {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>height: 55px;</p>
+<p class="p1">}</p>
+<p class="p1">header img {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>height: 120px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition: all 1s ease-in-out;</p>
+<p class="p1">}</p>
+<p class="p1">main {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 210px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>animation: fadeIn 1s ease-in-out forwards;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>opacity: 0;</p>
+<p class="p1">}</p>
+<p class="p1">@keyframes fadeIn { to { opacity: 1; } }</p>
+<p class="p2"><br></p>
+<p class="p1">/* Tableau 2x2 infos pratiques */</p>
+<p class="p1">.info-table {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));</p>
+<p class="p1"><span class="Apple-converted-space">  </span>gap: 1.5rem;</p>
+<p class="p1">}</p>
+<p class="p1">.info-box {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>box-shadow: 0 2px 6px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition: transform 0.3s ease;</p>
+<p class="p1">}</p>
+<p class="p1">.info-box:hover { transform: translateY(-4px); }</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body class="text-gray-800"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;header id="mainHeader"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;img src="unnamed.png" alt="Logo Cambounet"&gt;</p>
+<p class="p1">&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;main class="site-wrapper px-6 py-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="text-center mb-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1 class="text-3xl sm:text-4xl font-bold text-red-700 mb-6 leading-snug"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;strong&gt;La bourse aux vêtements et jouets&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>est organisée par le volley de Cambounet-sur-le-Sor&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>et permet de vendre ses vêtements et jouets,&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>et d'en acheter à prix raisonnable.&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mt-8"&gt;Bourse d'HIVER 2025&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="bg-white rounded-2xl shadow p-6 mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3 class="text-xl font-semibold text-red-700 mb-3"&gt;📅 Dates et horaires&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="space-y-2 text-gray-800 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;strong&gt;Samedi 8 octobre de 9h à 12h :&lt;/strong&gt; je dépose (26 articles max par liste, dont 10 jouets max). &lt;strong&gt;Non acceptés :&lt;/strong&gt; sous-vêtements, maillots de bain, rideaux, coupons de tissu, objets fragiles.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;strong&gt;Samedi 8 novembre de 14h à 18h :&lt;/strong&gt; j’achète&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;strong&gt;Dimanche 9 novembre de 9h à 17h :&lt;/strong&gt; j’achète&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;strong&gt;Lundi 10 novembre de 17h à 19h :&lt;/strong&gt; je reprends les invendus.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="text-sm text-red-700"&gt;Les invendus non repris le lundi 10 novembre à 19h15 seront considérés comme abandonnés.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="mt-6 text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="https://script.google.com/macros/s/AKfycby7Rlyk4z2W0vlsoLSKH3-XpRW7-Mg8HBbJNr74aQ/dev"</p>
+<p class="p1"><span class="Apple-converted-space">         </span>class="inline-block bg-red-700 text-white px-6 py-3 rounded-lg shadow hover:bg-red-800 transition"&gt;📝 Réserver ma liste&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 items-start"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white rounded-2xl shadow p-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h4 class="text-lg font-semibold text-red-700 mb-2"&gt;📍 Au complexe sportif Hubert Forestier&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;Complexe sportif Hubert Forestier, 5 rue de la mairie, 81580 Cambounet-sur-le-Sor&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="mt-4 font-semibold"&gt;Seuls les articles propres et en très bon état sont acceptés.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="mt-3"&gt;Participation : &lt;strong&gt;2€ par liste&lt;/strong&gt; + &lt;strong&gt;20% du prix de vente&lt;/strong&gt; (max 2 listes/personne).&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="mt-2 text-sm text-gray-600"&gt;L'association décline toute responsabilité en cas de perte, vol ou accident.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white rounded-2xl shadow overflow-hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;iframe src="https://www.google.com/maps?q=Complexe+sportif+Hubert+Forestier,+5+rue+de+la+mairie,+81580+Cambounet-sur-le-Sor&amp;output=embed"</p>
+<p class="p1"><span class="Apple-converted-space">              </span>width="100%" height="100%" style="min-height:260px;border:0;" loading="lazy"&gt;&lt;/iframe&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="mb-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3 class="text-xl font-semibold text-red-700 mb-4 text-center"&gt;ℹ️ Informations pratiques&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="info-table"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="info-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4 class="font-semibold text-red-700 mb-2"&gt;Articles &amp; Listes&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;26 articles max par liste (dont 10 jouets) – 2 listes maximum par personne.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="info-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4 class="font-semibold text-red-700 mb-2"&gt;Tarifs&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;2 € par liste lors du dépôt + 20 % de commission sur chaque vente.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="info-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4 class="font-semibold text-red-700 mb-2"&gt;Articles acceptés&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Vêtements d'hiver et jouets en bon état uniquement.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="info-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4 class="font-semibold text-red-700 mb-2"&gt;Responsabilité&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;L'association décline toute responsabilité en cas de perte, vol ou accident.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p1">&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;footer class="mt-10 bg-red-700 text-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="site-wrapper px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6 items-start"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="flex items-center justify-center md:justify-start"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="unnamed.png" alt="Logo Cambounet" class="h-24"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="text-center md:text-left"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h4 class="font-semibold text-lg"&gt;Nous contacter&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="mt-2"&gt;PONS Magali&lt;br&gt;Équipe de volley de Cambounet-sur-le-Sor&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="mt-2"&gt;Email : &lt;a href="mailto:volley.cambounet@gmail.com" class="underline text-white"&gt;volley.cambounet@gmail.com&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;Tél : &lt;a href="tel:0679983701" class="underline text-white"&gt;06 79 98 37 01&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="text-center md:text-right"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h4 class="font-semibold text-lg"&gt;Nous suivre&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="mt-3 flex justify-center md:justify-end space-x-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://www.facebook.com/CambounetFoyerClub" target="_blank" rel="noopener"&gt;Facebook&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://www.instagram.com/comitedesfetescambounet/" target="_blank" rel="noopener"&gt;Instagram&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="text-center text-sm py-3 bg-red-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Organisé par l'équipe de volley de Cambounet-sur-le-Sor</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">const header = document.getElementById('mainHeader');</p>
+<p class="p1">window.addEventListener('scroll', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const current = window.pageYOffset;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (current &gt; 150) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>header.classList.add('shrink');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>header.classList.remove('shrink');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">});</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
